@@ -153,7 +153,18 @@ button{
     font-family: "Cabin", sans-serif;
 }
 
-@media (max-width: 768px)
+@media (max-width: 911px){
+
+    .img_games {
+        display: flex;
+        border-radius: 15px;
+        height: 8rem;
+        width: 9rem;
+    }
+
+}
+
+@media (max-width: 875px)
 {
     .div_background_h1{
         font-size: 60px;
