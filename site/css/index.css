@@ -40,7 +40,7 @@ body {
 .div_menu {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     height: 2.5rem;
     width: 100%;
@@ -51,7 +51,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 12px;
     font-family: "Sekuya", system-ui;
     padding: 0.4rem;
     padding-left: 1rem;
@@ -60,7 +60,7 @@ body {
     color: #004853;
 }
 
-.item:hover{
+.item:hover, .item_ativo{
     color: white;
     border: 1px solid black;
     border-radius: 5px;
@@ -71,16 +71,6 @@ body {
     text-decoration: none;
 }
 
-.item_ativo{
-    color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 0.4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-decoration: none;
-}
 button{
     background: none;
     border: none;
@@ -178,13 +168,62 @@ button{
         margin-bottom: 1rem;
         display: flex;
         justify-content: center;
-
     }
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Sekuya", system-ui;
+        font-size: 8px;
+        padding: 0.1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-decoration: none;
+        color: #004853;
+    }
+
+    .item:hover, .item_ativo{
+        color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 0.1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-decoration: none;
+    }
+
+
 }
 @media (max-width: 470px)
 {
     .div_background_h1{
         font-size: 40px;
+    }
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Sekuya", system-ui;
+        font-size: 8px;
+        padding: 0.1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-decoration: none;
+        color: #004853;
+    }
+
+    .item:hover, .item_ativo{
+        color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 0.1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-decoration: none;
     }
 
 }
