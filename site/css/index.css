@@ -153,88 +153,69 @@ button{
     font-family: "Cabin", sans-serif;
 }
 
-@media (max-width: 911px){
-
-    .img_games {
-        display: flex;
-        border-radius: 15px;
-        height: 8rem;
-        width: 9rem;
-    }
-
-}
-
-@media (max-width: 875px)
+@media (max-width: 768px) /*Tablets*/
 {
     .div_background_h1{
         font-size: 60px;
     }
 
-    .div_gamescard {
+    .div_gamescard{
         flex-direction: column;
         height: auto;
+        padding: 1rem;
+        text-align: center;
     }
 
-    .img_games {
+    .img_games{
         margin-bottom: 1rem;
-        display: flex;
         justify-content: center;
     }
 
-    .item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Sekuya", system-ui;
-        font-size: 8px;
-        padding: 0.1rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        text-decoration: none;
-        color: #004853;
+    .stats_games{
+        flex-wrap: wrap;
     }
-
-    .item:hover, .item_ativo{
-        color: white;
-        border: 1px solid black;
-        border-radius: 5px;
-        cursor: pointer;
-        padding: 0.1rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        text-decoration: none;
-    }
-
-
 }
-@media (max-width: 470px)
+
+@media (max-width: 480px) /* Smartphones */
 {
     .div_background_h1{
         font-size: 40px;
     }
 
-    .item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Sekuya", system-ui;
+    .div_menu{
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .item{
         font-size: 8px;
-        padding: 0.1rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        text-decoration: none;
-        color: #004853;
     }
 
-    .item:hover, .item_ativo{
-        color: white;
-        border: 1px solid black;
-        border-radius: 5px;
-        cursor: pointer;
-        padding: 0.1rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        text-decoration: none;
+    .div_gamescard{
+        width: 95%;
+        padding: 1rem;
     }
 
+    .img_games{
+        width: 100%;
+        height: auto;
+    }
+
+    .img_games img{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .text_games p{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .stats_games{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
