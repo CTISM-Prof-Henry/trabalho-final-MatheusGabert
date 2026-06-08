@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Sekuya&display=swap');/*Fonte importada*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /*remove margens padrão.*/
+    padding: 0; /*remove espaçamentos internos padrão.*/
+    box-sizing: border-box; /*faz largura e altura considerarem bordas e padding*/
 }
 
 body {
@@ -17,12 +17,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: relative; /*Cria uma referência para elementos posicionados dentro dela.*/
     height: 25rem;
 }
 
 .div_background_video {
-    position: absolute;
+    position: absolute; /*Permite que o título h1 fique sobre ele.*/
     width: 100%; /*Largura*/
     height: 100%; /*altura*/
     object-fit: cover; /*manter proporção do vídeo*/
@@ -90,13 +90,13 @@ button{
     border-radius: 15px;
     border: 1px solid black;
     display: none;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /*Cria uma animação suave.*/
 }
 .show{
     display: flex;
 }
 .div_gamescard:hover {
-    transform: scale(1.03);
+    transform: scale(1.03); /*Aumenta o card em 3%.*/
     cursor: pointer;
 }
 
