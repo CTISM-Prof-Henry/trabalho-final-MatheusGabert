@@ -1,30 +1,34 @@
 /*plaheta de cores salvar https://paletadecores.com/paleta/fb6900/f63700/004853/007e80/00b9bd/*/
 
 @import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap'); /*Fonte importada*/
-body
-{
-    background: #004853;
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Sekuya&display=swap');/*Fonte importada*/
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.div_background
-{
-    position: relative;
-    height: 60vh;
+
+body {
+    background: #004853;
+}
+
+.div_background {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 25rem;
 }
 
-.div_background_video
-{
+.div_background_video {
     position: absolute;
     width: 100%; /*Largura*/
     height: 100%; /*altura*/
     object-fit: cover; /*manter proporção do vídeo*/
 }
-.div_background_h1 /*Fonte H1*/
-{
+
+.div_background_h1 /*Fonte H1*/ {
     color: #f63700;
     font-size: 100px;
     font-family: "Sekuya", system-ui;
@@ -32,21 +36,155 @@ body
     font-style: normal;
     z-index: 1; /*Controla a profundidade do item, x controla o eixo horinzontal e o y a vertical*/
 }
-@media (max-width: 768px)
-{
-    .div_background_h1
-    {
-        font-size: 40px;
-    }
-    /* Também poderia usar o para responsividade font-size: clamp(40px, 10vw, 100px); /*Tamanho minimo, cresce e diminuir conforme a largura da tela, tamanho maximo, isso garante a responsividade*/
+
+.div_menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 2.5rem;
+    width: 100%;
+    background-color: #f63700;
 }
 
-header
-{
+.item {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff3b00;
+    font-size: 13px;
+    font-family: "Sekuya", system-ui;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: #004853;
 }
 
+.item:hover{
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+}
 
+.item_ativo{
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+    padding: 0.2rem;
+    margin: 0.1rem;
+}
+
+.div_gamescard {
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 2rem;
+    background-color: rgb(0 0 0 / 0.2);
+    width: 100%;
+    max-width: 60rem;
+    height: 10rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    display: none;
+    transition: transform 0.3s ease;
+}
+.show{
+    display: flex;
+}
+.div_gamescard:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.img_games {
+    display: flex;
+    border-radius: 15px;
+    height: 9rem;
+    width: 10rem;
+}
+
+.img_games img{
+    border-radius: 15px;
+}
+
+.text_games {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+
+.text_games h2{
+   margin-bottom: 10px;
+    color: white;
+    font-family: "Sekuya", system-ui;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.text_games p{
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+    font-family: "cabin", system-ui;
+}
+
+.stats_games {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: white;
+    font-family: "cabin", system-ui;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f63700;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family: "Cabin", sans-serif;
+}
+
+@media (max-width: 768px)
+{
+    .div_background_h1{
+        font-size: 60px;
+    }
+
+    .div_gamescard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img_games {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+
+    }
+}
+@media (max-width: 470px)
+{
+    .div_background_h1{
+        font-size: 40px;
+    }
+
+}

@@ -1,20 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>
-    <link rel="stylesheet" href="css/index.css">
     <meta charset="UTF-8">
-    <meta viewport="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um site criado para listar os jogos mais jogados atualmente">
+    <meta name="author" content="Matheus Gabert">
+    <meta name="keywords" content="top,topgames,games,ranking,mais jogados">
+    <link rel="stylesheet" href="css/index.css">
     <title>TopGames</title> </head>
 <body>
-
     <header>
-    <p> </p>
+        <div class="div_background">
+            <video class="div_background_video" autoplay muted loop> <source src=videos/videoback.mp4 type="video/mp4"> </video>
+            <h1 class="div_background_h1">TOPGAMES</h1>
+        </div>
 
+        <nav class="div_menu">
+            <button class="item button item_ativo" onclick="filterElements('all', this)">Home</button>
+            <button class="item button" onclick="filterElements('fps', this)">FPS</button>
+            <button class="item button" onclick="filterElements('moba', this)">MOBA</button>
+            <button class="item button" onclick="filterElements('battleroyale', this)">Battle Royale</button>
+            <button class="item button" onclick="filterElements('rpg', this)">RPG</button>
+            <button class="item button" onclick="filterElements('sandbox', this)">Sandbox</button>
+            <button class="item button" onclick="filterElements('sobrevivencia', this)">Sobrevivencia</button>
+        </nav>
     </header>
 
-    <div class="div_background">
-        <video class="div_background_video" autoplay muted loop> <source src=videos/videoback.mp4 type="video/mp4"> </video>
-        <h1 class="div_background_h1">TOPGAMES</h1>
-    </div>
+    <main>
+        <section>
+            <div class="div_gamescard battleroyale" onclick="window.open('https://www.fortnite.com', '_blank')">
+
+                <div class="img_games">
+                    <img src="images/fortnite.jpg" alt="Fortnite">
+                </div>
+
+                <div class="text_games">
+                    <h2 title="Nome do Jogo">Fortnite</h2>
+
+                    <p title="Descrição do Jogo">
+                        Battle Royale gratuito desenvolvido pela Epic Games.
+                        Os jogadores competem em partidas online enquanto
+                        coletam recursos, constroem estruturas e enfrentam
+                        outros participantes.
+                    </p>
+
+                    <div class="stats_games">
+                        <span title="Lançamento">📅 2017</span>
+                        <span title="Jogadores ativos">👥 ~325M+ Mensais</span>
+                        <span title="Downloads/Vendas"> 🌐 ~500M+</span>
+                        <span title="Plataformas">🎮 PC, Console e Mobile</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_gamescard sandbox sobrevivencia" onclick="window.open('https://www.minecraft.net/pt-br', '_blank')">
+
+                <div class="img_games">
+                    <img src="images/minecraft.jpg" alt="Minecraft">
+                </div>
+
+                <div class="text_games">
+                    <h2 title="Nome do Jogo">Minecraft</h2>
+
+                    <p title="Descrição do Jogo">
+                        Jogo desenvolvido pela Mojang Studios de mundo aberto focado em criatividade e sobrevivência.
+                        Os jogadores podem explorar ambientes gerados proceduralmente, construir estruturas, coletar recursos e enfrentar criaturas em diferentes modos de jogo.
+                    </p>
+
+                    <div class="stats_games">
+                        <span title="Lançamento">📅 2011</span>
+                        <span title="Jogadores ativos">👥 ~170M+ Mensais</span>
+                        <span title="Downloads/Vendas"> 🌐 ~300M+</span>
+                        <span title="Plataformas">🎮 PC, Console e Mobile</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_gamescard fps" onclick="window.open('https://www.counter-strike.net/cs2', '_blank')">
+
+                <div class="img_games">
+                    <img src="images/Counter-Strike 2.png" alt="Counter-Strike 2">
+                </div>
+
+                <div class="text_games">
+                    <h2 title="Nome do Jogo">Counter-Strike 2</h2>
+
+                    <p title="Descrição do Jogo">
+                        FPS tático desenvolvido pela Valve, baseado em equipes onde terroristas e contraterroristas disputam objetivos em mapas competitivos.
+                        É um dos jogos de eSports mais populares do mundo.
+                    </p>
+
+                    <div class="stats_games">
+                        <span title="Lançamento">📅 2023</span>
+                        <span title="Jogadores ativos">👥 ~30M+ Mensais</span>
+                        <span title="Downloads/Vendas"> 🌐 ~200M+</span>
+                        <span title="Plataformas">🎮 PC</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_gamescard sandbox" onclick="window.open('https://www.roblox.com/pt', '_blank')">
+
+                <div class="img_games">
+                    <img src="images/Roblox.jpg" alt="Roblox">
+                </div>
+
+                <div class="text_games">
+                    <h2 title="Nome do Jogo">Roblox</h2>
+
+                    <p title="Descrição do Jogo">
+                        Plataforma online desenvolvida pela Roblox Corporation, que permite aos usuários criar, compartilhar e jogar milhões de experiências desenvolvidas pela comunidade.
+                        Roblox oferece diversos gêneros, desde simuladores e RPGs até jogos de ação e aventura, atraindo jogadores de todas as idades.
+                    </p>
+
+                    <div class="stats_games">
+                        <span title="Lançamento">📅 2006</span>
+                        <span title="Jogadores ativos">👥 ~380M+ Mensais</span>
+                        <span title="Downloads/Vendas"> 🌐 ~1B+</span>
+                        <span title="Plataformas">🎮 PC, Console e Mobile</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_gamescard moba" onclick="window.open('https://www.leagueoflegends.com/pt-br/', '_blank')">
+
+                <div class="img_games">
+                    <img src="images/League of Legends.jpg" alt="League of Legends">
+                </div>
+
+                <div class="text_games">
+                    <h2 title="Nome do Jogo">League of Legends</h2>
+
+                    <p title="Descrição do Jogo">
+                        MOBA competitivo desenvolvido pela Riot Games, onde duas equipes de cinco jogadores disputam partidas estratégicas com o objetivo de destruir a base adversária.
+                        Possui mais de 160 campeões, cada um com habilidades únicas, e é um dos principais jogos de eSports do mundo.
+                    </p>
+
+                    <div class="stats_games">
+                        <span title="Lançamento">📅 2009</span>
+                        <span title="Jogadores ativos">👥 ~150M+ Mensais</span>
+                        <span title="Downloads/Vendas"> 🌐 ~150M+</span>
+                        <span title="Plataformas">🎮 PC </span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_gamescard fps" onclick="window.open('https://playvalorant.com/pt-br/', '_blank')">
+
+                <div class="img_games">
+                    <img src="images/Valorant.jpg" alt="Valorant">
+                </div>
+
+                <div class="text_games">
+                    <h2 title="Nome do Jogo">Valorant</h2>
+
+                    <p title="Descrição do Jogo">
+                        FPS tático desenvolvido pela Riot Games que combina mecânicas precisas de tiro com habilidades especiais dos agentes.
+                        As equipes se enfrentam em partidas estratégicas envolvendo ataque e defesa de objetivos, exigindo trabalho em equipe e comunicação.
+                    </p>
+
+                    <div class="stats_games">
+                        <span title="Lançamento">📅 2020</span>
+                        <span title="Jogadores ativos">👥 ~35M+ Mensai</span>
+                        <span title="Downloads/Vendas"> 🌐 ~30M+</span>
+                        <span title="Plataformas">🎮 PC, Console e Mobile</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_gamescard rpg" onclick="window.open('https://genshin.hoyoverse.com/pt/home', '_blank')">
+
+                <div class="img_games">
+                    <img src="images/Genshin Impact.jpeg" alt="Genshin Impact">
+                </div>
+
+                <div class="text_games">
+                    <h2 title="Nome do Jogo">Genshin Impact</h2>
+
+                    <p title="Descrição do Jogo">
+                        RPG de ação em mundo aberto desenvolvido pela HoYoverse. Os jogadores exploram o continente de Teyvat, enfrentam inimigos, resolvem desafios e coletam personagens com habilidades elementais únicas.
+                        Destaca-se pelos gráficos inspirados em anime e pela exploração livre.
+                    </p>
+
+                    <div class="stats_games">
+                        <span title="Lançamento">📅 2020</span>
+                        <span title="Jogadores ativos">👥 ~60M+ Mensais</span>
+                        <span title="Downloads/Vendas"> 🌐 ~150M+</span>
+                        <span title="Plataformas">🎮 PC, Console e Mobile</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_gamescard battleroyale fps" onclick="window.open('https://www.callofduty.com/br/pt/warzone', '_blank')">
+
+                <div class="img_games">
+                    <img src="images/Warzone.jpg" alt="Call of Duty: Warzone">
+                </div>
+
+                <div class="text_games">
+                    <h2 title="Nome do Jogo">Call of Duty: Warzone</h2>
+
+                    <p title="Descrição do Jogo">
+                        Battle Royale gratuito desenvolvido pela Epic Games.
+                        Os jogadores competem em partidas online enquanto
+                        coletam recursos, constroem estruturas e enfrentam
+                        outros participantes.
+                    </p>
+
+                    <div class="stats_games">
+                        <span title="Lançamento">📅 2020</span>
+                        <span title="Jogadores ativos">👥 ~100M+ Mensais</span>
+                        <span title="Downloads/Vendas"> 🌐 ~125M+</span>
+                        <span title="Plataformas">🎮 PC, Console e Mobile</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>TopGames &copy 2026</p>
+        <p>Desenvolvido por Matheus Gabert</p>
+        <p>Projeto acadêmico de HTML, CSS e JavaScript</p>
+    </footer>
+
+<script src="js/index.js"> </script>
 </body>
 </html>
