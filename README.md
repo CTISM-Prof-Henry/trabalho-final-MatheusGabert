@@ -14,20 +14,20 @@ O projeto deve ser publicado no **GitHub Pages** e apresentado em aula para o pr
 
 * [X] meu site tem pelo menos um arquivo do tipo `.html` 
 * [X] estou usando CSS externo, em um arquivo separado `.css`
-* [ ] estou usando Javascript externo, em um arquivo separado `.js`
+* [X] estou usando Javascript externo, em um arquivo separado `.js`
 * [X] os arquivos do meu site estão na pasta `site`
 * [X] a pasta `site` tem um arquivo `index.html`, que é a página inicial do meu site; sem esse arquivo, o GitHub Pages 
       não vai funcionar
 * [X] estou ciente que, se eu modificar ou excluir arquivos que não estejam na pasta `site` 
       (por exemplo, `.github` ou `README.md`), isso pode afetar o funcionamento do meu site
-* [ ] respondi todas as perguntas e preenchi todos os checkboxes abaixo
+* [X] respondi todas as perguntas e preenchi todos os checkboxes abaixo
 * [X] meu site está hospedado no GitHub Pages, no link `<https://ctism-prof-henry.github.io/trabalho-final-MatheusGabert/>`
 
 ## 📖 Descrição do projeto
 
 Descreva abaixo **sobre o que se trata seu site:**
 
-- **Tema:** Jogos mais jogados
+- **Tema:** Lista dos jogos mais jogados
 - **Público-alvo:** Jogadores ("Gamers") de todas as idades
 - **Funcionalidades:** Ranking dos jogos mais jogados e direcionamento para seus devidos sites
 
@@ -59,19 +59,19 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
 
 #### Estrutura semântica
 
-- [ ] `<header>`
-- [ ] `<nav>`
-- [ ] `<main>`
-- [ ] `<section>`
+- [x] `<header>`
+- [x] `<nav>`
+- [x] `<main>`
+- [x] `<section>`
 - [ ] `<article>`
 - [ ] `<aside>`
-- [ ] `<footer>`
+- [x] `<footer>`
 
 #### Conteúdo
 
-- [ ] Títulos (`h1`, `h2`, `h3`, etc.)
-- [ ] Parágrafos (`p`)
-- [ ] Imagens (`img`)
+- [x] Títulos (`h1`, `h2`, `h3`, etc.)
+- [x] Parágrafos (`p`)
+- [x] Imagens (`img`)
 - [ ] Links (`a`)
 - [ ] Listas:
   - [ ] `ul`
@@ -83,29 +83,29 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
 - [ ] `<input>`
 - [ ] `<label>`
 - [ ] `<textarea>`
-- [ ] `<button>`
+- [x] `<button>`
 
 ### 🎨 CSS
 
 - Seletor de...
-  - [ ] Classes (`.classe`)
+  - [x] Classes (`.classe`)
   - [ ] IDs (`#id`)
-  - [ ] pseudoclasse (`#a::hover`)
-- [ ] Cores
-- [ ] Tipografia (e.g. `font-family`)
-- [ ] Margem e padding
-- [ ] Layout com `flexbox`
+  - [x] pseudoclasse (`#a::hover`)
+- [x] Cores
+- [x] Tipografia (e.g. `font-family`)
+- [x] Margem e padding
+- [x] Layout com `flexbox`
 - [ ] Layout com `grid`
-- [ ] Responsividade (`media queries`)
-- [ ] Animações ou transições
+- [x] Responsividade (`media queries`)
+- [x] Animações ou transições
 
 ## ⚙️ JavaScript
 
-- [ ] Manipulação do DOM
-- [ ] Eventos (`click`, `submit`, etc.)
+- [x] Manipulação do DOM
+- [x] Eventos (`click`, `submit`, etc.)
 - [ ] Validação de formulário
-- [ ] Alteração dinâmica de conteúdo
-- [ ] Uso de funções
+- [x] Alteração dinâmica de conteúdo
+- [x] Uso de funções
 - [ ] Uso de arrays ou objetos
 - [ ] Uso de `fetch` ou API externa
 - [ ] local Storage
@@ -120,26 +120,34 @@ Exemplo:
 ```
 site/
 │
-├── index.html
-├── pages/
-│   ├── about.html
-│   └── contact.html
+├── index.html: Arquivo principal, responsável pela estrutura da página, incluindo o cabeçalho, menu de navegação, cards dos jogos e rodapé.
 │
 ├── css/
-│   └── style.css
+│   └── index.css: Contém toda a estilização do site, como cores, fontes, layout, responsividade, animações e efeitos visuais.
 │
 ├── js/
-│   └── script.js
+│   └── index.js: Responsável pelas funcionalidades interativas da página, como o filtro de jogos por categoria e a alteração visual do botão ativo.
+│
+├── videos/
+│   └── videoback.mp4: Vídeo utilizado como plano de fundo no cabeçalho do site.
 │
 └── images/
-    ├── logo.png
-    └── banner.jpg
+    ├── Counter-Strike 2.png
+    ├── fortnite.jpg
+    ├── Genshin Impact.jpeg
+    ├── League of Legends.jpg
+    ├── Roblox.jpg
+    ├── Valorant.jpg
+    ├── minecraft.jpg
+    └── Warzone.jpg
+    
+    Pasta destinada às imagens dos jogos exibidos nos cards da página.
 ```
 
 ## 💡 Observações
 
 Utilize este espaço para comentar:
 
-- dificuldades encontradas
-- decisões de design
-- melhorias que podem ser feitas no futuro
+- Dificuldades encontradas: Sinceramente, notei uma certa na parte de filtragem dos itens no JS. Na responsividade e organização, onde qualquer ajuste errado já saia tudo do lugar.
+- Decisões de design: Decidi manter tudo em uma pagina para que ficasse mais facil de organizar, visto que para minha ideia de site, ja era o suficiente.
+- Melhorias que podem ser feitas no futuro: Adição de menu dropdown.
