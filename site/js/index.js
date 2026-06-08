@@ -1,6 +1,6 @@
 function filterElements(genero, botao) {
 
-    const elementos = document.querySelectorAll(".div_gamescard");
+    const elementos = document.querySelectorAll(".div_gamescard"); /*Busca todos os elementos que possuem a classe: <div class="div_gamescard" e Retorna uma lista.*/
 
     elementos.forEach((elemento) => {
         elemento.classList.remove("show");
