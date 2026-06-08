@@ -148,6 +148,6 @@ site/
 
 Utilize este espaço para comentar:
 
-- Dificuldades encontradas: Sinceramente, notei uma certa na parte de filtragem dos itens no JS. Na responsividade e organização, onde qualquer ajuste errado já saia tudo do lugar.
+- Dificuldades encontradas: Sinceramente, notei uma certa dificuldade na parte de filtragem dos itens no JS. Na responsividade e organização, onde qualquer ajuste errado já saia tudo do lugar.
 - Decisões de design: Decidi manter tudo em uma pagina para que ficasse mais facil de organizar, visto que para minha ideia de site, ja era o suficiente.
 - Melhorias que podem ser feitas no futuro: Adição de menu dropdown.
